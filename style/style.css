@@ -1,0 +1,88 @@
+:root {
+    --roboto-font: 'Roboto', sans-serif;
+    --gelasio-font: 'Gelasio', serif;
+    --white-color: #fff;
+    --primary-color: #C9453B;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--gelasio-font)
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+button{
+    color: inherit;
+}
+/* button */
+.btn{
+    border: none;
+    background-color: var(--primary-color);
+    padding: 14px 36px;
+    border-radius: 6px;
+    font-weight: 600;
+    box-shadow: 0 0 5px white;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+.btn:active{
+    opacity: 1;
+    box-shadow: 2px 2px 5px white;
+}
+
+/* container */
+.container{
+    width: 80%;
+    max-width: 1140px;
+    margin: auto;
+
+}
+
+
+
+.banner{
+    background-image: url("../images/intro-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.header{
+    width: 100%;
+    padding: 32px 0;
+    color: var(--white-color);
+}
+.header-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo{
+    height: 36px;
+    width: auto;
+}
+.header-logo img{
+    height: 100%;
+}
+.header-menu{
+    display: flex;
+    gap: 48px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.header-menu a:hover{
+    color: var(--primary-color);
+}
